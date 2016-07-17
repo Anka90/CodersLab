@@ -203,14 +203,6 @@ section{
 	top: 30px;
 	left: 10px;
 }
-/*.second-right p {
-	display: block;
-	position: absolute;
-	width: 300px;
-	height: 300px;
-	border: 1px solid red;
-	margin-left: 600px;*/
-}
 
 .second-right {
 	float: right;
@@ -230,21 +222,17 @@ section{
 	padding: 35px 15px
 }
 
-div.underline {
-	width: 150px;
-	height: 5px;
-	background-color: #23ba9c;
-	position: absolute;
-	top: 30px;
-	left: 10px;
-}
-
-/* div underline - co tu???  ustawić marginesy*/
-
 .sectionthree {
 	background: #ededed;
-	height: 600px;
+	height: 650px;
 	width: 100%;
+}
+
+.sectionthree h2 {
+	text-transform: uppercase;
+	left: 68px;
+	margin-bottom: 15px;
+	position: absolute;
 }
 
 .sectionthree .label {
@@ -299,22 +287,29 @@ h3 {
 .price {
 	border-color: #d9d9d9;
 	background: #ffffff;
-	color: #d9d9d9;
+	
 	display: block;
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
-	top: 0;
+	top: 10px;
 	left: 0;
 	right: 0;
 	margin:0 auto;
 	padding: 10px;
 	
 }
-.price p {
+
+.price p  {
+	color: #d9d9d9;
 	text-align: center;
-	font-size: 40px;
+	font-size: 30px;
+	margin-top: 20px;
 }
+
+/*.pln p {
+	font-size: 15px;
+}*/
 
 .join {
 	display: block;
@@ -326,81 +321,40 @@ h3 {
 	margin: 0 auto;
 }
 
-.label:hover { 
-
-	position: relative;
+.label:hover {
+	*position: relative;
 	width: 300px;
 	height: 500px;
 	border: 2px solid #23ba9c;
 	margin: 50px;
 	background-color: #23ba9c;
-
 }
 
-.circle:hover {
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	position: absolute;
-	top: -26px;
-	left: 0;
-	right: 0;
-	margin:0 auto;
-	background-color: #ffffff;
-}
-
-.circlet:hover {
-	width: 20px;
-	height: 20px;
+.label:hover .circle {
 	background-color: #23ba9c;
-	border-radius: 50%;
-	position: absolute;
-	top: -11px;
-	left: 0;
-	right: 0;
-	margin:0 auto;
+	border: #23ba9c;
+}
+.label:hover .circlet, .label:hover .h3 {
+	background-color: #ffffff;
 
 }
-
-h3:hover {
-	display: block;
-	margin-top: 50px;	
-	text-align: center;
-	position: relative;
-	color: white;
+ 
+.label:hover .price {
+	color: #23ba9c;
 }
 
-.price:hover {
-	background: #ffffff;
-	display: block;
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	top: 0;
-	left: 0;
-	right: 0;
-	margin:0 auto;
-
-
-}
-
-.join:hover {
-	display: block;
-	width: 150px;
-	height: 35px;
+.label:hover .join { 
 	background-color: #ffffff;
 	color: #23ba9c;
-	position: relative;
-	margin: 0 auto;
 }
-
+	
 sup {
 	font-size: 0.4em;
 }
 
-.price p:nth-child(2) {
+/*.price p:nth-child(2) {
 	font-size: 20px;
-}
+}*/
 
 .list{
 
@@ -427,37 +381,111 @@ sup {
 
 
 .join {
-  border-radius: 10px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 15px;
-  background: #23ba9c;
-  padding: 10px;
-  text-decoration: none;
-  text-transform: uppercase;
-  position: absolute;
-  top: 400px;
-  left: 75px;
+	border-radius: 10px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 15px;
+	background: #23ba9c;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 400px;
+	left: 75px;
 }
 
 .join:hover {
-  background: #23ba9c;
-  text-decoration: none;
+	background: #ffffff;
+	text-decoration: none;
+	color: #23ba9c;
 
  
 }
+.contact {
+	width: 100%;
+	height: 500px;
+}
 
-input[type="submit"] {
-background-color: #ffffff;
-color: #23ba9c;
-width: 150px;
-height: 35px;
-border-radius: 10%;
-border-color: #23ba9c;
+.contact-left{
+	float: left;
+	width: 700px;
+
+
+}
+
+input[type=text] {
+	border: 1px solid #23ba9c;
+	width: 600px;
+	height: 50px;
+	margin: 10px 10px 10px 30px;
+	padding: 5px;
+}
+
+textarea {
+	resize: none;
+	border: 1px solid #23ba9c;
+	width: 600px;
+	height: 150px;
+	margin: 10px 10px 10px 30px;
+	padding: 5px;
+
+}
+
+.contact-right {
+	float: right
+	width: 500px;
+}
+
+div .chairjpg {
+	background: url("../image/red_chair.png") center / cover no-repeat white;
+	height: 210px;
+	width: 260px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+input[type=submit] {
+	background-color: #23ba9c;
+	color: #ffffff;
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	border-color: #23ba9c;
+	margin-top: 13px;
 }
 
 
+footer {
+	width: 100%
+	height: 100px;
+	padding: 10px;
+	color: #d9d9d9;
+	text-transform: capitalize;
+}
 
-textarea {
-resize: none;
+.f-left {
+	width: 900px;
+	float: left;
+
+
+}
+
+.f_left a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid blue;
+    width: 36em;
+    height: 36px;
+    text-align: center;  
+}
+
+.flickr {
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+}
+.f-right {
+	width: 300px;
+	float: right;
 }
