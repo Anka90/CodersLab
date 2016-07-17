@@ -255,7 +255,7 @@ div.underline {
 	position: relative;
 	width: 300px;
 	height: 500px;
-	border: 1px solid #d9d9d9;
+	border: 2px solid #d9d9d9;
 	margin: 50px;
 	text-transform: uppercase;
 	background-color: #ffffff;
@@ -264,7 +264,7 @@ div.underline {
 .circle{
 	width: 50px;
 	height: 50px;
-	border: 1px solid #d9d9d9;
+	border: 2px solid #d9d9d9;
 	border-radius: 50%;
 	position: absolute;
 	top: -26px;
@@ -301,16 +301,19 @@ h3 {
 	background: #ffffff;
 	color: #d9d9d9;
 	display: block;
-	width: 50px;
-	height: 50px;
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
 	top: 0;
 	left: 0;
 	right: 0;
 	margin:0 auto;
-	text-align: center;
+	padding: 10px;
 	
-
+}
+.price p {
+	text-align: center;
+	font-size: 40px;
 }
 
 .join {
@@ -328,28 +331,28 @@ h3 {
 	position: relative;
 	width: 300px;
 	height: 500px;
-	border: 1px solid #23ba9c;
+	border: 2px solid #23ba9c;
 	margin: 50px;
 	background-color: #23ba9c;
+
 }
 
 .circle:hover {
 	width: 50px;
 	height: 50px;
-	border: 3px solid black;
 	border-radius: 50%;
 	position: absolute;
 	top: -26px;
 	left: 0;
 	right: 0;
 	margin:0 auto;
-	background-color: #23ba9c;
+	background-color: #ffffff;
 }
 
 .circlet:hover {
 	width: 20px;
 	height: 20px;
-	background-color: white;
+	background-color: #23ba9c;
 	border-radius: 50%;
 	position: absolute;
 	top: -11px;
@@ -364,19 +367,20 @@ h3:hover {
 	margin-top: 50px;	
 	text-align: center;
 	position: relative;
-	
+	color: white;
 }
 
 .price:hover {
-	background: black;
+	background: #ffffff;
 	display: block;
-	width: 50px;
-	height: 50px;
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
 	top: 0;
 	left: 0;
 	right: 0;
 	margin:0 auto;
+
 
 }
 
@@ -384,17 +388,71 @@ h3:hover {
 	display: block;
 	width: 150px;
 	height: 35px;
-	background-color: black;
-	color: #ffffff;
+	background-color: #ffffff;
+	color: #23ba9c;
 	position: relative;
 	margin: 0 auto;
 }
 
-input[type=submit] {
+sup {
+	font-size: 0.4em;
+}
+
+.price p:nth-child(2) {
+	font-size: 20px;
+}
+
+.list{
+
+}
+.sectionthree ul li {
+	text-decoration: none;
+	list-style-type: none;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+
+.sectionthree li {
+	width: 296px;
+	height: 30px;
+	background-color: #d9d9d9;
+
+}
+
+.sectionthree li:nth-child(2n+2) {
+	background-color: #f0f0f0;
+}
+
+
+.join {
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  background: #23ba9c;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  top: 400px;
+  left: 75px;
+}
+
+.join:hover {
+  background: #23ba9c;
+  text-decoration: none;
+
+ 
+}
+
+input[type="submit"] {
 background-color: #ffffff;
 color: #23ba9c;
 width: 150px;
 height: 35px;
+border-radius: 10%;
 border-color: #23ba9c;
 }
 
